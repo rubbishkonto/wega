@@ -152,6 +152,44 @@
 	  null, //07.04
 	  null //08.04
     ];
+	
+	const kreon = [
+	  null, //5
+	  null, //6
+	  null, //7
+      null, //8
+      null, //9
+      null, //10
+      null, //11
+      null, //12
+      null, //13
+	  null, //14
+      null, //15
+      null, //16
+      14.8, //17
+	  14.8, //18
+      14.8, //19
+	  14.8, //20
+      14.8, //21
+      14.8, //22
+      15, //23
+      15, //24
+	  15, //25
+	  15, //26
+	  15, //27
+      15, //28
+      15, //29
+      15.2, //30
+      15.2, //31
+	  15.2, //01
+      15.2, //02.04
+      15.2, //03.04
+      15.2, //04.04
+      15.2, //05.04
+      15.2, //06.04
+	  15.2, //07.04
+	  15.2 //08.04
+    ];
 
     new Chart(ctx, {
       type: 'line',
@@ -171,12 +209,23 @@
           label: 'Wysilek',
           data: data2,
           borderColor: 'rgba(255, 51, 0, 1)',
-          backgroundColor: 'rgba(255, 41, 0, 0.2)',
+          backgroundColor: 'rgba(255, 51, 0, 0.2)',
           borderWidth: 2,
           pointRadius: 2,
           pointHoverRadius: 6,
           tension: 0.2,
 		  showLine: false
+        },
+		{
+          label: 'Kreon',
+          data: kreon,
+          borderColor: 'rgba(100, 100, 0, 1)',
+          backgroundColor: 'rgba(100, 100, 0, 0.2)',
+          borderWidth: 2,
+          pointRadius: 0.5,
+          pointHoverRadius: 6,
+          tension: 0.2,
+		  showLine: true
         }
 		]
       },
