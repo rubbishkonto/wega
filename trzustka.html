@@ -83,7 +83,9 @@ const ctx = document.getElementById('weightChart').getContext('2d');
 	  '2026-04-11',
 	  '2026-04-12',
 	  '2026-04-13',
-	  '2026-04-14'
+	  '2026-04-14',
+	  '2026-04-15',
+	  '2026-04-16',
     ];
 
     const data = [
@@ -130,6 +132,8 @@ const ctx = document.getElementById('weightChart').getContext('2d');
 	  15.15, //12.04
 	  14.85, //13.04
 	  15.05, //14.04
+	  14.85, //15.04
+	  14.6, //16.04
     ];
 	
 	const sport = [
@@ -176,6 +180,8 @@ const ctx = document.getElementById('weightChart').getContext('2d');
 	  15.10, //12.04
 	  null, //13
 	  null, //14
+	  null, //15
+	  null, //16
     ];
 	
 	const kreon = [
@@ -222,6 +228,8 @@ const ctx = document.getElementById('weightChart').getContext('2d');
 	  16.4, //12.04
 	  16.4, //13.04
 	  16.35, //14.04 4*2 - 8
+	  16.35, //15.04
+	  16.35, //15.04
     ];
 	
 	const stara_waga = [
@@ -268,6 +276,8 @@ const ctx = document.getElementById('weightChart').getContext('2d');
 	  16,  //12.04
 	  16,  //13.04
 	  16, //14.04
+	  16, //15.04
+	  16, //16.04
     ];
 	
 	
@@ -365,9 +375,11 @@ const ctx = document.getElementById('weightChart').getContext('2d');
  <tr><th>LEK</th><th>OD</th><th>DO</th><th>DAWKA</th></tr>
  <tr><td>Amyladol</td><td>2026-03-02</td><td>2026-03-16</td><td>1.5 tabletki rozkruszonej, 20min zwilżonej (do każdego posiłku - 3x)</td></tr>
  <tr><td>Kreon</td><td>2026-03-17</td><td>2026-03-23</td><td>2 x 10.000 (do każdego posiłku - 3x)</td></tr>
- <tr><td>Kreon</td><td>2026-03-24</td><td>2026-03-30</td><td>1 x 25.000 (do każdego posiłku - 3x)</td></tr>
- <tr><td>Kreon</td><td>2026-03-31</td><td>2026-04-08</td><td>2 x 25.000 (do każdego posiłku - 3x)</td></tr>
- <tr><td>Kreon</td><td>2026-04-09</td><td>today</td><td>3 x 25.000 (do każdego posiłku - 3x)</td></tr>
+ <tr><td>Kreon</td><td>2026-03-24</td><td>2026-03-30</td><td>(3/dzień) 1 x 25.000 (do każdego posiłku - 3x)</td></tr>
+ <tr><td>Kreon</td><td>2026-03-31</td><td>2026-04-08</td><td>(6/dzień) 2 x 25.000 (do każdego posiłku - 3x)</td></tr>
+ <tr><td>Kreon</td><td>2026-04-09</td><td>2026-04-12</td><td>(9/dzień) 3 x 25.000 (do każdego posiłku - 3x)</td></tr>
+ <tr><td>Kreon</td><td>2026-04-13</td><td></td><td>(6/dzień) x 25.000 patrz niżej - szczegóły</td></tr>
+ <tr><td>Kreon</td><td>2026-04-09</td><td>today</td><td>(8/dzień) 4 x 25.000 (do każdego posiłku - 2x)</td></tr>
  </table>
  <table border="1">
   <tr><th colspan="3">Cieczka</th></tr>
@@ -728,10 +740,36 @@ const ctx = document.getElementById('weightChart').getContext('2d');
   <tr>
 	<td>2026-04-15</td>
 	<td>
-	<!-- Leczenie -->
+		<ul>
+			<li>08:00
+				<ul>
+					<li>Kreon 25000 - 2 kapsułki</li>
+					<li>kwas foliowy 5 mg</li>
+					<li>B12</li>
+				</ul>
+			</li>
+			<li>plan 11:30 - Kreon 25000 - 2 kapsułki</li>
+			<li>plan 15:00
+				<ul>
+					<li>Kreon 25000 - 2 kapsułki</li>
+					
+				</ul>
+			</li>
+			<li>plan - 20
+				<ul>
+					<li>Kreon 25000 - 2 kapsułki</li>
+				</ul>
+			</li>
+		</ul>
 	</td>
+	
 	<td>
-	<!-- Dieta -->
+		<ul>
+			<li>08:00 250 gramów royal canin (mokra)</li>
+			<li>11:30 250 gramów royal canin (mokra)</li>
+			<li>15:30 250 gramów royal canin (mokra)</li>
+			<li>20:30 250 gramów royal canin (mokra)</li>
+		</ul>
 	</td>
 	<td>
 	<!-- Wydarzenie -->
@@ -741,13 +779,50 @@ const ctx = document.getElementById('weightChart').getContext('2d');
   <tr>
 	<td>2026-04-16</td>
 	<td>
-	<!-- Leczenie -->
+		<ul>
+			<li>08:00
+				<ul>
+					<li>Kreon 25000 - 2 kapsułki</li>
+					<li>kwas foliowy 5 mg</li>
+					<li>B12</li>
+				</ul>
+			</li>
+			<li>11:30 - Kreon 25000 - 2 kapsułki</li>
+			<li>16:00 - Kreon 25000 - 2 kapsułki</li>
+			<li>20:00 - Kreon 25000 - 2 kapsułki</li>
+			<li>23:15 - Kreon 25000 - 1 kapsułka</li>
+		</ul>
+	</td>
+	
+	<td>
+		<ul>
+			<li>08:00
+				<ul>
+					<li>290 gramów royal canin (mokra)</li>
+					<li>glutamin 0.5 miarki (2,5 gr)</li>
+				</ul>
+			</li>
+			<li>11:30
+				<ul>
+					<li>290 gramów royal canin (mokra)</li>
+					<li>glutamin 0.5 miarki (2,5 gr)</li>
+				</ul>
+			</li>
+			<li>16:00
+				<ul>
+					<li>290 gramów royal canin (mokra)</li>
+					<li>glutamin 0.5 miarki (2,5gr)</li>
+				</ul>
+			</li>
+			<li>20:00 290 gramów royal canin (mokra)</li>
+			<li>23:15 200 gramów royal canin (mokra)</li>
+		</ul>
 	</td>
 	<td>
-	<!-- Dieta -->
-	</td>
-	<td>
-	<!-- Wydarzenie -->
+		Glutamin. Za pierwszym razem podałam w misce z wodą do picia. Karmę wyławiała z tego bardzo niechętnie, nie za bardzo chciała to pić.<br/>
+		Później wlewałam do miski z jedzeniem. Wody niewiele brałam do rozpuszczenia tego (może 50 ml, może trochę więcej, ale niewiele)
+		<br /><br />
+		Czy Glutamin mógł spowodować rozluźnienie kupy? Tak szybko by to nastąpiło? Czy bardziej zwiększenie ilości karmy? Wcześniej kał się nie rozluźniał przy dużych dawkach, tylko powiększał, to raczej nie to. Co jeszcze mogło być przyczyną?
 	</td>
   </tr>
   
