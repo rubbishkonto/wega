@@ -92,6 +92,8 @@ const ctx = document.getElementById('weightChart').getContext('2d');
 	  '2026-04-19',
 	  '2026-04-20',
 	  '2026-04-21',
+	  '2026-04-22',
+	  '2026-04-23',
     ];
 
     const data = [
@@ -145,6 +147,9 @@ const ctx = document.getElementById('weightChart').getContext('2d');
 	  14.6, //19.04
 	  15, //20.04
 	  14.9, //21.04
+	  
+	  15, //22.04
+	  15.05, //23.04
     ];
 	
 	const sport = [
@@ -396,7 +401,7 @@ const ctx = document.getElementById('weightChart').getContext('2d');
  <tr><td>Kreon</td><td>2026-03-31</td><td>2026-04-08</td><td>(6/dzień) 2 x 25.000 (do każdego posiłku - 3x)</td></tr>
  <tr><td>Kreon</td><td>2026-04-09</td><td>2026-04-12</td><td>(9/dzień) 3 x 25.000 (do każdego posiłku - 3x)</td></tr>
  <tr><td>Kreon</td><td>2026-04-13</td><td></td><td>(6/dzień) x 25.000 patrz niżej - szczegóły</td></tr>
- <tr><td>Kreon</td><td>2026-04-09</td><td>today</td><td>(8/dzień) 4 x 25.000 (do każdego posiłku - 2x). Czasami dodaje wieczorem 1x kreon travix (10.000)</td></tr>
+ <tr><td>Kreon</td><td>2026-04-14</td><td>today</td><td>(8/dzień) 4 x 25.000 (do każdego posiłku - 2x). Czasami dodaje wieczorem 1x kreon travix (10.000)</td></tr>
  </table>
  <table border="1">
   <tr><th colspan="3">Cieczka</th></tr>
@@ -845,40 +850,18 @@ const ctx = document.getElementById('weightChart').getContext('2d');
   
   <tr>
 	<td>2026-04-17</td>
-	<td>
+	<td rowspan="7">
 		<ul>
-			<li>08:00
-				<ul>
-					<li>Kreon 25000 - 2 kapsułki</li>
+					<li>Kreon 25000 - 2 kapsułki * 4<br />czasami + 1-2 Kreon travix (10000)</li>
 					<li>kwas foliowy 5 mg</li>
 					<li>B12</li>
 				</ul>
-			</li>
-			<li>11:30 - Kreon 25000 - 2 kapsułki</li>
-			<li>16:00 - Kreon 25000 - 2 kapsułki</li>
-			<li>20:00 - Kreon 25000 - 2 kapsułki + Kreon travix (10000) - 1 kapsułka</li>
-		</ul>
 	</td>
 	
-	<td>
+	<td rowspan="7">
 		<ul>
-			<li>08:00
-				<ul>
-					<li>290 gramów royal canin (mokra)</li>
-					<li>glutamin 0.5 miarki (2,5 gr)</li>
-				</ul>
-			</li>
-			<li>11:30
-				<ul>
-					<li>290 gramów royal canin (mokra) + Hills</li>
-				</ul>
-			</li>
-			<li>16:00
-				<ul>
-					<li>290 gramów royal canin (mokra) + Hills</li>
-				</ul>
-			</li>
-			<li>20:00 290 gramów royal canin (mokra) + Hills</li>
+			<li>4 * 290 gr royal canin + Hills</li>
+			<li>0.5 - 1.5 miarki Glutamin</li>
 		</ul>
 	</td>
 	<td>
@@ -888,43 +871,6 @@ const ctx = document.getElementById('weightChart').getContext('2d');
   
   <tr>
 	<td>2026-04-18 sobota</td>
-	<td>
-		<ul>
-			<li>08:00
-				<ul>
-					<li>Kreon 25000 - 2 kapsułki</li>
-					<li>kwas foliowy 5 mg</li>
-					<li>B12</li>
-				</ul>
-			</li>
-			<li>11:30 - Kreon 25000 - 2 kapsułki</li>
-			<li>16:00 - Kreon 25000 - 2 kapsułki</li>
-			<li>20:00 - Kreon 25000 - 2 kapsułki + Kreon travix (10000) - 1 kapsułka</li>
-		</ul>
-	</td>
-	
-	<td>
-		<ul>
-			<li>08:00
-				<ul>
-					<li>290 gramów royal canin (mokra)</li>
-					<li>glutamin 0.5 miarki (2,5 gr)</li>
-				</ul>
-			</li>
-			<li>11:30
-				<ul>
-					<li>290 gramów royal canin (mokra) + Hills</li>
-					<li>glutamin 0.5 miarki (2,5 gr)</li>
-				</ul>
-			</li>
-			<li>16:00
-				<ul>
-					<li>290 gramów royal canin (mokra) + Hills</li>
-				</ul>
-			</li>
-			<li>20:00 290 gramów royal canin (mokra) + Hills</li>
-		</ul>
-	</td>
 	<td>
 		<ul>
 			<li>owce, 1 krótkie wejście</li>
@@ -937,43 +883,6 @@ const ctx = document.getElementById('weightChart').getContext('2d');
 	<td>2026-04-19</td>
 	<td>
 		<ul>
-			<li>08:00
-				<ul>
-					<li>Kreon 25000 - 2 kapsułki</li>
-					<li>kwas foliowy 5 mg</li>
-					<li>B12</li>
-				</ul>
-			</li>
-			<li>11:30 - Kreon 25000 - 2 kapsułki</li>
-			<li>16:00 - Kreon 25000 - 2 kapsułki</li>
-			<li>20:00 - Kreon 25000 - 2 kapsułki + Kreon travix (10000) - 1 kapsułka</li>
-		</ul>
-	</td>
-	
-	<td>
-		<ul>
-			<li>06:30
-				<ul>
-					<li>290 gramów royal canin (mokra)</li>
-					<li>glutamin 0.5 miarki (2,5 gr)</li>
-				</ul>
-			</li>
-			<li>12:00
-				<ul>
-					<li>290 gramów royal canin (mokra) + Hills</li>
-					<li>glutamin 0.5 miarki (2,5 gr)</li>
-				</ul>
-			</li>
-			<li>19:00
-				<ul>
-					<li>290 gramów royal canin (mokra) + Hills</li>
-				</ul>
-			</li>
-			<li>22:00 290 gramów royal canin (mokra) + Hills</li>
-		</ul>
-	</td>
-	<td>
-		<ul>
 			<li>Bca, rower</li>
 		</ul>
 	</td>
@@ -981,44 +890,6 @@ const ctx = document.getElementById('weightChart').getContext('2d');
   
   <tr>
 	<td>2026-04-20 poniedzialek</td>
-	<td>
-		<ul>
-			<li>08:00
-				<ul>
-					<li>Kreon 25000 - 2 kapsułki</li>
-				</ul>
-			</li>
-			<li>11:30 - Kreon 25000 - 2 kapsułki</li>
-			<li>16:00 - Kreon 25000 - 2 kapsułki</li>
-			<li>20:00 - Kreon 25000 - 2 kapsułki</li>
-		</ul>
-	</td>
-	
-	<td>
-		<ul>
-			<li>06:00
-				<ul>
-					<li>290 gramów royal canin (mokra)</li>
-					<li>glutamin 0.5 miarki (2,5 gr)</li>
-				</ul>
-			</li>
-			<li>12:00
-				<ul>
-					<li>290 gramów royal canin (mokra) + Hills</li>
-				</ul>
-			</li>
-			<li>16:00
-				<ul>
-					<li>290 gramów royal canin (mokra) + Hills</li>
-				</ul>
-			</li>
-			<li>20:00
-				<ul>
-					<li> 290 gramów royal canin (mokra) + Hills</li>
-					<li>glutamin 0.5 miarki (2,5 gr)</li>
-				</ul>
-			</li>
-		</ul>
 	</td>
 	<td>
 	<!-- Wydarzenie -->
@@ -1027,53 +898,7 @@ const ctx = document.getElementById('weightChart').getContext('2d');
   
   <tr>
 	<td>2026-04-21</td>
-	<td>
-		<ul>
-			<li>07:30
-				<ul>
-					<li>Kreon 25000 - 2 kapsułki</li>
-				</ul>
-			</li>
-			<li>plan 11:30
-				<ul>
-					<li>Kreon 25000 - 2 kapsułki</li>
-					<li>kwas foliowy</li>
-					<li>B12</li>
-				</ul>
-			</li>
-			<li>plan 16:00 - Kreon 25000 - 2 kapsułki</li>
-			<li>plan 20:00 - Kreon 25000 - 2 kapsułki</li>
-		</ul>
-	</td>
 	
-	<td>
-		<ul>
-			<li>07:30
-				<ul>
-					<li>290 gramów royal canin (mokra)</li>
-					<li>glutamin 0.5 miarki (2,5 gr)</li>
-				</ul>
-			</li>
-			<li>plan 12:00
-				<ul>
-					<li>290 gramów royal canin (mokra) + Hills</li>
-					<li>glutamin 0.5 miarki (2,5 gr)</li>
-				</ul>
-			</li>
-			<li>plan 16:00
-				<ul>
-					<li>290 gramów royal canin (mokra) + Hills</li>
-					<li>glutamin 0.5 miarki (2,5 gr)</li>
-				</ul>
-			</li>
-			<li>plan 20:00
-				<ul>
-					<li> 290 gramów royal canin (mokra) + Hills</li>
-					<li>glutamin 0.5 miarki (2,5 gr)</li>
-				</ul>
-			</li>
-		</ul>
-	</td>
 	<td>
 	<!-- Wydarzenie -->
 	</td>
@@ -1082,23 +907,11 @@ const ctx = document.getElementById('weightChart').getContext('2d');
   <tr>
 	<td>2026-04-22</td>
 	<td>
-	<!-- Leczenie -->
-	</td>
-	<td>
-	<!-- Dieta -->
-	</td>
-	<td>
 	<!-- Wydarzenie -->
 	</td>
   </tr>
   <tr>
 	<td>2026-04-23</td>
-	<td>
-	<!-- Leczenie -->
-	</td>
-	<td>
-	<!-- Dieta -->
-	</td>
 	<td>
 	<!-- Wydarzenie -->
 	</td>
@@ -1120,7 +933,10 @@ const ctx = document.getElementById('weightChart').getContext('2d');
   <tr class="sec">
 	<td>2026-04-24 18:00</td>
 	<td>
-		PLANOWANA WIZYTA
+		PLANOWANA WIZYTA<br/>
+		<ul>
+			<li>Sierść się sypie mocniej niż u Siary</li>
+		</ul>
 			
 	</td>
 	<td><!-- Dieta -->
